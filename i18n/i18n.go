@@ -1,0 +1,153 @@
+package i18n
+
+// T returns the English string for the given key.
+func T(key string) string {
+	translations := map[string]string{
+		// Main menu
+		"menu.title":       "easy-git",
+		"menu.subtitle":    "git made simple for humans",
+		"menu.init":        "🚀  Initialize a git repository",
+		"menu.status":      "📋  View repository status",
+		"menu.commit":      "✅  Make a commit",
+		"menu.push_pull":   "🔄  Push / Pull",
+		"menu.branches":    "🌿  Manage branches",
+		"menu.config":      "⚙️   Settings",
+		"menu.quit":        "✖   Quit",
+		"menu.navigate":    "↑↓ navigate   enter select   q quit",
+
+		// Status
+		"status.title":     "Repository Status",
+		"status.branch":    "Current branch",
+		"status.staged":    "✅  Ready to commit",
+		"status.unstaged":  "📝  Modified (not staged)",
+		"status.untracked": "➕  New files",
+		"status.clean":     "✨  All clean! Nothing to commit.",
+		"status.no_repo":   "⚠️   No git repository found here.",
+		"status.back":      "← back",
+
+		// Commit
+		"commit.title":       "New Commit",
+		"commit.step1":       "Step 1 of 3 — Choose files",
+		"commit.step2":       "Step 2 of 3 — Write the message",
+		"commit.step3":       "Step 3 of 3 — Confirm",
+		"commit.select_all":  "[ select all ]",
+		"commit.msg_prompt":  "Commit message:",
+		"commit.msg_hint":    "Tip: describe WHAT was done. E.g: Add login button",
+		"commit.confirm":     "Confirm and commit",
+		"commit.success":     "🎉 Commit successful!",
+		"commit.empty_msg":   "⚠️  Message cannot be empty.",
+		"commit.nothing":     "⚠️  No files selected.",
+		"commit.back":        "← cancel",
+
+		// Push/Pull
+		"pushpull.title":   "Push / Pull",
+		"pushpull.push":    "⬆️   Push  — send your commits to the server",
+		"pushpull.pull":    "⬇️   Pull  — download updates from server",
+		"pushpull.pushing": "Pushing...",
+		"pushpull.pulling": "Pulling...",
+		"pushpull.success": "✅  Operation completed!",
+		"pushpull.error":   "❌  Error:",
+		"pushpull.remote":  "Remote",
+		"pushpull.back":    "← back",
+
+		// Branches
+		"branches.title":          "Manage Branches",
+		"branches.current":        "current branch",
+		"branches.switch":         "🔀  Switch branch",
+		"branches.create":         "➕  Create new branch",
+		"branches.delete":         "🗑️   Delete branch",
+		"branches.name":           "New branch name:",
+		"branches.confirm_delete": "Delete branch '%s'?",
+		"branches.success":        "✅  Done!",
+		"branches.error":          "❌  Error:",
+		"branches.back":           "← back",
+		"branches.choose_delete":  "Choose a branch to delete:",
+		"branches.cannot_delete":  "current — cannot delete",
+
+		// Init
+		"init.title":              "Initialize Git Repository",
+		"init.already_repo":       "⚠️  This folder is already a git repository!",
+		"init.step1":              "Step 1 of 5 — Checking configuration",
+		"init.step2":              "Step 2 of 5 — Main branch",
+		"init.step3":              "Step 3 of 5 — .gitignore file",
+		"init.step4":              "Step 4 of 5 — Connect to GitHub/GitLab",
+		"init.step5":              "Step 5 of 5 — First commit",
+		"init.config_ok":          "✅  Configuration found:",
+		"init.config_missing":     "⚠️  Your name and email are not configured in git.",
+		"init.config_why":         "They appear on every commit you make.",
+		"init.name_prompt":        "Your name:",
+		"init.email_prompt":       "Your email:",
+		"init.branch_prompt":      "Main branch name:",
+		"init.branch_hint":        "The current industry standard is  main  (previously master)",
+		"init.branch_main":        "main  (recommended)",
+		"init.branch_master":      "master",
+		"init.branch_custom":      "custom name...",
+		"init.branch_custom_type": "Type the branch name:",
+		"init.gitignore_title":    "Create a .gitignore file?",
+		"init.gitignore_why":      ".gitignore tells git which files to IGNORE (e.g. node_modules, .env, build...)",
+		"init.gitignore_exists":   "⚠️  A .gitignore already exists. Replace it?",
+		"init.gitignore_choose":   "Choose your project's language/technology:",
+		"init.gitignore_none":     "Don't create .gitignore now",
+		"init.remote_title":       "Connect to a remote repository?",
+		"init.remote_why":         "The remote is where your code lives in the cloud (GitHub, GitLab, Bitbucket...)",
+		"init.remote_url":         "Remote repository URL:",
+		"init.remote_hint":        "E.g: https://github.com/your-user/your-project.git",
+		"init.remote_skip":        "Skip for now",
+		"init.remote_yes":         "Yes, connect now",
+		"init.remote_ok":          "✅  Remote added:",
+		"init.remote_err":         "❌  Error adding remote:",
+		"init.first_commit_title": "Make the first commit?",
+		"init.first_commit_why":   "Will add all files in the folder and create the initial commit.",
+		"init.first_commit_yes":   "✅  Yes, make initial commit",
+		"init.first_commit_no":    "Skip for now",
+		"init.done_title":         "🎉  Repository created successfully!",
+		"init.done_summary":       "Summary of what was done:",
+		"init.done_init":          "✅  git init executed",
+		"init.done_config":        "✅  Name and email configured",
+		"init.done_branch":        "✅  Main branch:",
+		"init.done_gitignore":     "✅  .gitignore created",
+		"init.done_remote":        "✅  Remote connected:",
+		"init.done_commit":        "✅  First commit made",
+		"init.done_next":          "Next steps:",
+		"init.done_next1":         "→  Use  Make a commit  to save your changes",
+		"init.done_next2":         "→  Use  Push  to send to the server",
+		"init.yes":                "Yes",
+		"init.no":                 "No",
+
+		// General
+		"general.yes":     "Yes",
+		"general.no":      "No",
+		"general.confirm": "Confirm",
+		"general.cancel":  "Cancel",
+		"general.loading": "Loading...",
+		"general.error":   "Error",
+		"general.enter":   "enter confirm",
+		"general.esc":     "esc back",
+
+		// Navigation help texts
+		"help.navigate_confirm_back":   "↑↓ navigate   enter confirm   esc back",
+		"help.navigate_select_back":    "↑↓ navigate   enter select   esc back",
+		"help.navigate_switch_back":    "↑↓ navigate   enter switch   esc back",
+		"help.navigate_delete_back":    "↑↓ navigate   enter delete   esc back",
+		"help.navigate_space_back":     "↑↓ navigate   space select   enter next   esc back",
+		"help.navigate_choose":         "↑↓ choose   enter confirm",
+		"help.esc_back":                "esc back",
+		"help.esc_back_menu":           "esc back to menu",
+		"help.esc_cancel":              "esc cancel",
+		"help.navigate_confirm_cancel": "↑↓ navigate   enter confirm   esc cancel",
+		"help.enter_configure_cancel":  "enter configure now   esc cancel",
+		"help.enter_back_menu":         "enter back to menu",
+		"help.enter_continue":          "enter continue",
+		"help.enter_confirm_back":      "enter confirm   esc back",
+		"help.cursor_confirm_back":     "← → move cursor   ctrl+u clear   enter confirm   esc back",
+		"help.staged":                  "✓ staged",
+
+		// Config
+		"config.helper_active": "helper active, no token saved",
+	}
+
+	if val, ok := translations[key]; ok {
+		return val
+	}
+	return key
+}
