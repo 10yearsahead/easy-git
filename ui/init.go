@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	tea "github.com/charmbracelet/bubbletea"
 	"github.com/10yearsahead/easy-git/git"
 	"github.com/10yearsahead/easy-git/i18n"
+	tea "github.com/charmbracelet/bubbletea"
 )
 
 // ── Init View ─────────────────────────────────────────────────────────────────
@@ -14,19 +14,19 @@ import (
 type initStep int
 
 const (
-	initStepCheck       initStep = iota // 1 - check git config (name/email)
-	initStepConfigName                  // 1b - enter name
-	initStepConfigEmail                 // 1c - enter email
-	initStepBranch                      // 2 - choose main branch
-	initStepBranchCustom                // 2b - type custom name
-	initStepGitignore                   // 3 - create gitignore?
-	initStepGitignorePick               // 3b - choose template
-	initStepRemote                      // 4 - connect remote?
-	initStepRemoteURL                   // 4b - enter URL
-	initStepFirstCommit                 // 5 - first commit?
-	initStepRunning                     // running operations
-	initStepDone                        // done
-	initStepAlreadyRepo                 // already a repo
+	initStepCheck         initStep = iota // 1 - check git config (name/email)
+	initStepConfigName                    // 1b - enter name
+	initStepConfigEmail                   // 1c - enter email
+	initStepBranch                        // 2 - choose main branch
+	initStepBranchCustom                  // 2b - type custom name
+	initStepGitignore                     // 3 - create gitignore?
+	initStepGitignorePick                 // 3b - choose template
+	initStepRemote                        // 4 - connect remote?
+	initStepRemoteURL                     // 4b - enter URL
+	initStepFirstCommit                   // 5 - first commit?
+	initStepRunning                       // running operations
+	initStepDone                          // done
+	initStepAlreadyRepo                   // already a repo
 )
 
 // Summary of completed actions

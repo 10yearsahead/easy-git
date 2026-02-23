@@ -26,129 +26,129 @@ var (
 var (
 	// App container
 	AppStyle = lipgloss.NewStyle().
-		Padding(1, 2)
+			Padding(1, 2)
 
 	// Title banner
 	TitleStyle = lipgloss.NewStyle().
-		Foreground(ColorPrimary).
-		Bold(true).
-		PaddingBottom(0)
+			Foreground(ColorPrimary).
+			Bold(true).
+			PaddingBottom(0)
 
 	SubtitleStyle = lipgloss.NewStyle().
-		Foreground(ColorSubtext).
-		PaddingBottom(1)
+			Foreground(ColorSubtext).
+			PaddingBottom(1)
 
 	// Section headers inside views
 	SectionTitleStyle = lipgloss.NewStyle().
-		Foreground(ColorSecondary).
-		Bold(true).
-		PaddingTop(1).
-		PaddingBottom(0)
+				Foreground(ColorSecondary).
+				Bold(true).
+				PaddingTop(1).
+				PaddingBottom(0)
 
 	// Normal menu item
 	MenuItemStyle = lipgloss.NewStyle().
-		Foreground(ColorText).
-		PaddingLeft(2)
+			Foreground(ColorText).
+			PaddingLeft(2)
 
 	// Selected menu item
 	MenuItemSelectedStyle = lipgloss.NewStyle().
-		Foreground(ColorPrimary).
-		Bold(true).
-		PaddingLeft(0)
+				Foreground(ColorPrimary).
+				Bold(true).
+				PaddingLeft(0)
 
 	// Cursor indicator
 	CursorStyle = lipgloss.NewStyle().
-		Foreground(ColorPrimary).
-		Bold(true)
+			Foreground(ColorPrimary).
+			Bold(true)
 
 	// Dimmed / muted text
 	MutedStyle = lipgloss.NewStyle().
-		Foreground(ColorMuted)
+			Foreground(ColorMuted)
 
 	// Success message
 	SuccessStyle = lipgloss.NewStyle().
-		Foreground(ColorSuccess).
-		Bold(true)
+			Foreground(ColorSuccess).
+			Bold(true)
 
 	// Error / warning message
 	ErrorStyle = lipgloss.NewStyle().
-		Foreground(ColorDanger).
-		Bold(true)
+			Foreground(ColorDanger).
+			Bold(true)
 
 	WarningStyle = lipgloss.NewStyle().
-		Foreground(ColorWarning)
+			Foreground(ColorWarning)
 
 	// Help bar at the bottom
 	HelpStyle = lipgloss.NewStyle().
-		Foreground(ColorMuted).
-		PaddingTop(1)
+			Foreground(ColorMuted).
+			PaddingTop(1)
 
 	// Box / panel
 	PanelStyle = lipgloss.NewStyle().
-		Border(lipgloss.RoundedBorder()).
-		BorderForeground(ColorBorder).
-		Padding(0, 1).
-		MarginTop(1)
+			Border(lipgloss.RoundedBorder()).
+			BorderForeground(ColorBorder).
+			Padding(0, 1).
+			MarginTop(1)
 
 	// Active panel
 	PanelActiveStyle = lipgloss.NewStyle().
-		Border(lipgloss.RoundedBorder()).
-		BorderForeground(ColorPrimary).
-		Padding(0, 1).
-		MarginTop(1)
+				Border(lipgloss.RoundedBorder()).
+				BorderForeground(ColorPrimary).
+				Padding(0, 1).
+				MarginTop(1)
 
 	// File in the status list
 	FileNameStyle = lipgloss.NewStyle().
-		Foreground(ColorText)
+			Foreground(ColorText)
 
 	FileTagStagedStyle = lipgloss.NewStyle().
-		Foreground(ColorSuccess).
-		Bold(true)
+				Foreground(ColorSuccess).
+				Bold(true)
 
 	FileTagModifiedStyle = lipgloss.NewStyle().
-		Foreground(ColorWarning).
-		Bold(true)
+				Foreground(ColorWarning).
+				Bold(true)
 
 	FileTagNewStyle = lipgloss.NewStyle().
-		Foreground(ColorSecondary).
-		Bold(true)
+			Foreground(ColorSecondary).
+			Bold(true)
 
 	FileTagDeletedStyle = lipgloss.NewStyle().
-		Foreground(ColorDanger).
-		Bold(true)
+				Foreground(ColorDanger).
+				Bold(true)
 
 	// Badge: current branch label
 	BranchBadgeStyle = lipgloss.NewStyle().
-		Background(ColorPrimary).
-		Foreground(lipgloss.Color("#FFFFFF")).
-		Bold(true).
-		Padding(0, 1).
-		MarginRight(1)
+				Background(ColorPrimary).
+				Foreground(lipgloss.Color("#FFFFFF")).
+				Bold(true).
+				Padding(0, 1).
+				MarginRight(1)
 
 	// Checkbox styles
 	CheckboxChecked = lipgloss.NewStyle().
-		Foreground(ColorSuccess).Bold(true)
+			Foreground(ColorSuccess).Bold(true)
 
 	CheckboxUnchecked = lipgloss.NewStyle().
-		Foreground(ColorMuted)
+				Foreground(ColorMuted)
 
 	// Text input prompt
 	InputPromptStyle = lipgloss.NewStyle().
-		Foreground(ColorPrimary).
-		Bold(true)
+				Foreground(ColorPrimary).
+				Bold(true)
 
 	InputHintStyle = lipgloss.NewStyle().
-		Foreground(ColorMuted).
-		Italic(true)
+			Foreground(ColorMuted).
+			Italic(true)
 
 	// Step indicator
 	StepStyle = lipgloss.NewStyle().
-		Foreground(ColorSecondary).
-		Bold(true)
+			Foreground(ColorSecondary).
+			Bold(true)
 
 	// Divider
 	DividerStyle = lipgloss.NewStyle().
-		Foreground(ColorBorder)
+			Foreground(ColorBorder)
 )
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

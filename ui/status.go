@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	tea "github.com/charmbracelet/bubbletea"
 	"github.com/10yearsahead/easy-git/git"
 	"github.com/10yearsahead/easy-git/i18n"
+	tea "github.com/charmbracelet/bubbletea"
 )
 
 // ── Status View ───────────────────────────────────────────────────────────────
@@ -65,8 +65,8 @@ func (m StatusModel) View() string {
 
 	// Branch badge
 	b.WriteString("\n")
-	b.WriteString(MutedStyle.Render(i18n.T("status.branch")+" "))
-	b.WriteString(BranchBadgeStyle.Render(" 🌿 "+m.status.Branch+" "))
+	b.WriteString(MutedStyle.Render(i18n.T("status.branch") + " "))
+	b.WriteString(BranchBadgeStyle.Render(" 🌿 " + m.status.Branch + " "))
 	b.WriteString("\n")
 
 	hasAny := len(m.status.Staged) > 0 || len(m.status.Unstaged) > 0 || len(m.status.Untracked) > 0

@@ -3,8 +3,8 @@ package ui
 import (
 	"strings"
 
-	tea "github.com/charmbracelet/bubbletea"
 	"github.com/10yearsahead/easy-git/i18n"
+	tea "github.com/charmbracelet/bubbletea"
 )
 
 // TextInput is a reusable single-line text input with cursor movement support.

@@ -8,16 +8,16 @@ import (
 // ── Root App ──────────────────────────────────────────────────────────────────
 
 type App struct {
-	scene      Scene
-	menu       MenuModel
-	init       InitModel
-	status     StatusModel
-	commit     CommitModel
-	pushPull   PushPullModel
-	branches   BranchesModel
-	config     ConfigModel
-	width      int
-	height     int
+	scene    Scene
+	menu     MenuModel
+	init     InitModel
+	status   StatusModel
+	commit   CommitModel
+	pushPull PushPullModel
+	branches BranchesModel
+	config   ConfigModel
+	width    int
+	height   int
 }
 
 func NewApp() App {

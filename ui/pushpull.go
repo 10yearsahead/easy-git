@@ -5,9 +5,9 @@ import (
 	"os/exec"
 	"strings"
 
-	tea "github.com/charmbracelet/bubbletea"
 	"github.com/10yearsahead/easy-git/git"
 	"github.com/10yearsahead/easy-git/i18n"
+	tea "github.com/charmbracelet/bubbletea"
 )
 
 // ── Push/Pull View ────────────────────────────────────────────────────────────

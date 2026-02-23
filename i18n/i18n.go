@@ -4,16 +4,16 @@ package i18n
 func T(key string) string {
 	translations := map[string]string{
 		// Main menu
-		"menu.title":       "easy-git",
-		"menu.subtitle":    "git made simple for humans",
-		"menu.init":        "🚀  Initialize a git repository",
-		"menu.status":      "📋  View repository status",
-		"menu.commit":      "✅  Make a commit",
-		"menu.push_pull":   "🔄  Push / Pull",
-		"menu.branches":    "🌿  Manage branches",
-		"menu.config":      "⚙️   Settings",
-		"menu.quit":        "✖   Quit",
-		"menu.navigate":    "↑↓ navigate   enter select   q quit",
+		"menu.title":     "easy-git",
+		"menu.subtitle":  "git made simple for humans",
+		"menu.init":      "🚀  Initialize a git repository",
+		"menu.status":    "📋  View repository status",
+		"menu.commit":    "✅  Make a commit",
+		"menu.push_pull": "🔄  Push / Pull",
+		"menu.branches":  "🌿  Manage branches",
+		"menu.config":    "⚙️   Settings",
+		"menu.quit":      "✖   Quit",
+		"menu.navigate":  "↑↓ navigate   enter select   q quit",
 
 		// Status
 		"status.title":     "Repository Status",
@@ -26,18 +26,18 @@ func T(key string) string {
 		"status.back":      "← back",
 
 		// Commit
-		"commit.title":       "New Commit",
-		"commit.step1":       "Step 1 of 3 — Choose files",
-		"commit.step2":       "Step 2 of 3 — Write the message",
-		"commit.step3":       "Step 3 of 3 — Confirm",
-		"commit.select_all":  "[ select all ]",
-		"commit.msg_prompt":  "Commit message:",
-		"commit.msg_hint":    "Tip: describe WHAT was done. E.g: Add login button",
-		"commit.confirm":     "Confirm and commit",
-		"commit.success":     "🎉 Commit successful!",
-		"commit.empty_msg":   "⚠️  Message cannot be empty.",
-		"commit.nothing":     "⚠️  No files selected.",
-		"commit.back":        "← cancel",
+		"commit.title":      "New Commit",
+		"commit.step1":      "Step 1 of 3 — Choose files",
+		"commit.step2":      "Step 2 of 3 — Write the message",
+		"commit.step3":      "Step 3 of 3 — Confirm",
+		"commit.select_all": "[ select all ]",
+		"commit.msg_prompt": "Commit message:",
+		"commit.msg_hint":   "Tip: describe WHAT was done. E.g: Add login button",
+		"commit.confirm":    "Confirm and commit",
+		"commit.success":    "🎉 Commit successful!",
+		"commit.empty_msg":  "⚠️  Message cannot be empty.",
+		"commit.nothing":    "⚠️  No files selected.",
+		"commit.back":       "← cancel",
 
 		// Push/Pull
 		"pushpull.title":   "Push / Pull",
